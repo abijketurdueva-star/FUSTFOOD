@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>FASTFOOD | Даамдын мыкты тандоосу</title>
+  
+</head>
+<body>
+
+<header>
+  <div class="logo">FAST<span>FOOD.</span></div>
+  <nav>
+    <a href="#home">Башкы бет</a>
+    <a href="#menu">Меню</a>
+    <a href="#about">Биз жөнүндө</a>
+    <a href="#order">Заказ берүү</a>
+    <a href="#contact">Байланыш</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="tag">ДААМДЫН ЖАҢЫ ДЕҢГЭЭЛИ</div>
+      <h1>Даамдуу.<br>Тез.<br>Сапаттуу.</h1>
+      <p>
+        Сүйүктүү бургерлериң, кытырак фри жана башка
+        даамдар бир жерде. Өзүңө жаккан тамакты танда!
+      </p>
+      <a class="btn" href="#menu">Менюну көрүү →</a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2 class="section-title">Биздин меню 🍔</h2>
+    <p class="section-desc">
+      Сүйүктүү тамагыңды тандап, себетке кош.
+    </p>
+
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">Биз жөнүндө</h2>
+    <p class="section-desc">
+      FASTFOOD — даамдуу тамак жана жагымдуу тейлөө.
+    </p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="emoji">🍔</div>
+        <h3>Жаңы даярдалат</h3>
+        <p>Ар бир заказды жаңы даярдоого жана даамына көңүл бурууга умтулабыз.</p>
+      </div>
+      <div class="about-card">
+        <div class="emoji">⚡</div>
+        <h3>Тез тейлөө</h3>
+        <p>Заказ берүү ыңгайлуу, меню түшүнүктүү жана тандоо оңой.</p>
+      </div>
+      <div class="about-card">
+        <div class="emoji">❤️</div>
+        <h3>Кардар биринчи орунда</h3>
+        <p>Жылуу мамиле, тазалык жана кардардын каалоосу биз үчүн маанилүү.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2 class="section-title">Заказ берүү 🛒</h2>
+    <p class="section-desc">
+      Тамактарды себетке кошуп, форманы толтур.
+    </p>
+
+    <div class="order-layout">
+      <div class="panel">
+        <h3>Сенин себетиң</h3>
+        <div id="cartItems">Себет азырынча бош.</div>
+        <div class="total">
+          Жалпы: <span id="total">0</span> сом
+        </div>
+        <button class="btn" onclick="clearCart()">Себетти тазалоо</button>
+      </div>
+
+      <div class="panel">
+        <h3>Кардардын маалыматы</h3>
+        <form id="orderForm">
+          <label for="customer">Атың</label>
+          <input id="customer" name="customer" required
+                 placeholder="Атыңды жаз">
+
+          <label for="phone">Телефон номери</label>
+          <input id="phone" name="phone" type="tel" required
+                 placeholder="+996 ...">
+
+          <label for="address">Жеткирүү дареги</label>
+          <textarea id="address" name="address" required
+                    placeholder="Дарегиңди жаз"></textarea>
+
+          <label for="payment">Төлөө жолу</label>
+          <select id="payment" name="payment">
+            <option>Накталай</option>
+            <option>Карта аркылуу</option>
+          </select>
+
+          <button class="btn" type="submit">Заказды даярдоо</button>
+        </form>
+        <p id="orderMessage" role="status" style="margin-top:15px"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="location" id="contact">
+    <h2 class="section-title">Биздин жайгашкан жер 📍</h2>
+    <p>
+      Дарек:Гүлчө шаары.<br>
+      Телефон:0558872777.<br>
+      Иштөө убактысы:08.00 баштап 22.00 го чейин иштейт.
+    </p>
+    <a class="btn" href="#order">Заказ берүү</a>
+  </section>
+</main>
+
+<footer>
+  <div class="logo">FAST<span>FOOD.</span></div>
+  <p>Даамдуу тамак — жакшы маанай!</p>
+  <p>© <span id="year"></span> FASTFOOD. Бардык укуктар корголгон.</p>
+</footer>
+
+
+</body>
+</html>
